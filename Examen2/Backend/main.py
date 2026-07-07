@@ -20,10 +20,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# BASE DE DATOS (TEMPORAL)
+# BASE DE DATOS
 videojuegos = [
 
     {
+        # DESCRIPCION DE LOS JUEGOS, ID, NOMBRE, GENERO, PLATAFORMA, PRECIO E IMAGEN
         "id": 1,
         "nombre": "Mario Kart World",
         "genero": "Fiesta / Carreras",
