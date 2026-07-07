@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Configuración -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameZone</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+
+                GameZone
+
+            </a>
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active"
+                            href="#">
+
+                            Inicio
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                            href="#videojuegos">
+
+                            Videojuegos
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+
+        <div class="container text-center">
+
+            <h1 class="display-4">
+
+                Bienvenido a GameZone
+
+            </h1>
+
+            <p class="lead">
+
+                Encuentra información, precios y las mejores tiendas para comprar
+                tus videojuegos favoritos.
+
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- INFORMACIÓN -->
+    <section class="container my-5">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h2>
+
+                    Sobre GameZone
+
+                </h2>
+
+                <p>
+
+                    GameZone es un catálogo el cual mostrara los juegos mas
+                    relevantes de nintendo de momento.
+
+                </p>
+
+                <p>
+
+                    Los datos son obtenidos desde una API REST utilizando
+                    <strong>fetch()</strong> y mostrados dinámicamente
+                    mediante <strong>innerHTML</strong>.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+
+                <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=900"
+                    class="img-fluid rounded shadow"
+                    alt="Videojuegos">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CATÁLOGO -->
+    <main class="container my-5">
+
+        <h2
+            class="text-center mb-5"
+            id="videojuegos">
+
+            Catálogo de Videojuegos
+
+        </h2>
+
+        <div
+            class="row"
+            id="contenedor-juegos">
+
+            <!-- Aquí JavaScript insertará las tarjetas -->
+
+        </div>
+
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal fade"
+        id="modalTiendas"
+        tabindex="-1"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+
+                <!-- Encabezado -->
+                <div class="modal-header bg-primary text-white">
+
+                    <h4
+                        class="modal-title"
+                        id="tituloJuego">
+
+                    </h4>
+
+                    <button
+                        type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+
+                    </button>
+
+                </div>
+
+                <!-- Contenido -->
+                <div class="modal-body">
+
+                    <h5 class="mb-3">
+
+                        Tiendas disponibles
+
+                    </h5>
+
+                    <div
+                        class="row"
+                        id="listaTiendas">
+
+                        <!-- Aquí JavaScript agregará las tarjetas -->
+                    </div>
+
+                </div>
+
+                <!-- Pie -->
+                <div class="modal-footer">
+
+                    <button
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Cerrar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+
+        <p class="mb-0">
+
+            © 2026 GameZone | Proyecto Integrador
+            Desarrollo Frontend y Backend
+
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
